@@ -17,6 +17,100 @@ p {
     */
 }
 
+
+.slide-border {
+    overflow: hidden;
+}
+
+.slide-in-right1 {
+    animation: Slide_in_right1 0.75s ease;
+}
+
+.slide-in-right2 {
+    animation: Slide_in_right2 1.5s ease;
+}
+
+.slide-in-up1 {
+    animation: Slide_in_up1 2s ease;
+}
+
+.slide-in-up2 {
+    animation: Slide_in_up2 2.3s ease;
+}
+
+.slide-in-up3 {
+    animation: Slide_in_up3 2.6s ease;
+}
+
+.slide-in-up4 {
+    animation: Slide_in_up4 2.9s ease;
+}
+
+@keyframes Slide_in_right1{
+    
+    0% {
+        transform: translateX(-150px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes Slide_in_right2{
+    
+    0% {
+        transform: translateX(-300px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes Slide_in_up1{
+    
+    0% {
+        transform: translateY(150px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes Slide_in_up2{
+    
+    0% {
+        transform: translateY(172.5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes Slide_in_up3{
+    
+    0% {
+        transform: translateY(195px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+@keyframes Slide_in_up4{
+    
+    0% {
+        transform: translateY(217.5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+
+
+
 .nav-header {
     display: flex;
     justify-content: space-between;
@@ -25,6 +119,21 @@ p {
     padding-left: 30px;
     background-color: #050A30;
 }
+
+.logo {
+    display: flex;
+    
+}
+
+.logo-name{
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 10px;  
+}
+
+
 
 .nav-links {
     font-family: 'Montserrat', sans-serif;
