@@ -25,24 +25,42 @@ export default function App() {
           </div>
         </ul>
       </div>
-      <div className='uebermich'>
-        <div className='titel'>
-          <p>Übermich</p>
+      <div className='content'>
+        <div className='vorstellung'>
+          <ul className='typewriter'>
+            <li className='text2'>Mein Name ist...</li>
+            <li className='text1'>Hallo User,</li>
+          </ul>
+          <div className='slide-border'>
+            <div className='name'>Emil Collins Udupuzhayil</div>
+          </div>
+          <div className='slide-border'>
+            <div className='vorstellung-text'>
+            Ich bin 17 Jahre Alt und mache die Ausbildung zum Applikationsentwickler 
+            durch die IMS (Informatikmittelschule) an der  <a href='https://www.kbw.ch/'>
+              Kantonsschule Büelrain</a>.
+            </div>
+          </div>
         </div>
-      </div>
-      <div className='schulischeLaufbahn'>
-        <div className='titel'>
-          <p>Schulische Laufbahn</p>
+        <div className='uebermich'>
+          <div className='titel'>
+            <p>Übermich</p>
+          </div>
         </div>
-      </div>
-      <div className='kf'>
-        <div className='titel'>
-          <p>Kenntnisse & Fähigkeiten</p>
+        <div className='schulischeLaufbahn'>
+          <div className='titel'>
+            <p>Schulische Laufbahn</p>
+          </div>
         </div>
-      </div>
-      <div className='kontakt'>
-        <div className='titel'>
-          <p>Kontakt</p>
+        <div className='kf'>
+          <div className='titel'>
+            <p>Kenntnisse & Fähigkeiten</p>
+          </div>
+        </div>
+        <div className='kontakt'>
+          <div className='titel'>
+            <p>Kontakt</p>
+          </div>
         </div>
       </div>
     </div>
