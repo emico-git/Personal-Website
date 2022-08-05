@@ -13,12 +13,13 @@
 
     --typewriter: 3.5s;
    
-    --animation-name: 5.5s;
-    --animation-nameNr: 5.5;
+    --animation-name: 5.75s;
+    --animation-nameNr: 5.75;
     /*
     -animation-vorstellung-text sollte immer (--animation-name + 1.5s) sein
     */
-    --animation-vorstellung-text: 6.5s;
+    --animation-vorstellung-text-image: 7.5s;
+    
 }
 
 
@@ -27,6 +28,19 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+a:link {
+    color:#F51720;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#F51720;
+}
+
+a:visited {
+    color:#F51720;
 }
 
 .content {
@@ -171,18 +185,38 @@ p {
 .nav-links li {
     display: inline-block;
     padding: 20px;
-    
+    cursor: pointer;
 }
 
 
 
-
-
 .vorstellung {
-    height: 100vh;
+    display: flex;
+    height: 80vh;
+}
+
+.image {
+    animation: Slide_in_right3 var(--animation-vorstellung-text-image);
+}
+
+@keyframes Slide_in_right3{
+    
+    0% {
+        transform: translateX(calc(var(--animation-nameNr) * -75px));
+    }
+    87.5%{ 
+        transform: translateX(calc(var(--animation-nameNr) * -75px));
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.vorstellung-text {
     list-style: none;
+    transform: translateX(5%);
     margin-top: 6%;
-    margin-left: 20%;
+    
 }
 
 .typewriter {
@@ -274,7 +308,7 @@ p {
 
 .name {
     font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
+    font-size: 50px;
     color:#FBF9FA;
     padding-top: 2%;
     animation: Slide_in_up5 var(--animation-name) ease;
@@ -293,12 +327,12 @@ p {
     }
 }
 
-.vorstellung-text {
+.description {
     padding-top: 2%;
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
     color:#FBF9FA;
-    animation: Slide_in_up6 var(--animation-vorstellung-text);
+    animation: Slide_in_up6 var(--animation-vorstellung-text-image);
 }
 
 @keyframes Slide_in_up6{
