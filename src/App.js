@@ -94,7 +94,7 @@ export default function App() {
             momentan ein Spiel zu programmieren und in der nahen Zukunft
             auch vielleicht einmal Musik zu machen. 
             </div>
-            <div data-aos='fade-left' className='emoticon2'>(⌐■_■)</div>
+            <div data-aos='fade-up' className='emoticon2'>(⌐■_■)</div>
           </div>
         </div>
         </div>
