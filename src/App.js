@@ -72,8 +72,9 @@ export default function App() {
               </div>
             </div>
             <div className='slide-border'>
-              <div className='emoticon1'>(・‿・)/</div>
+              <div className='emoticon1'>(.‿.)/</div>
             </div>
+            
           </div>
         </div>
         <div ref={whoami} className='whoami'>
@@ -87,13 +88,13 @@ export default function App() {
           <div className='whoami-right-side'>
             <div data-aos='fade-up' className='whoami-text'>
             Ich bin am 5. Februar 2005 in Österreich, Wien geboren. 
-            In meiner Freizeit spiele ich Videospiele gerne und gehe regelmässig in 
+            In meiner Freizeit spiele ich gerne Videospiele und gehe regelmässig in 
             den Kraftraum. Ich bin eine sehr neugierige Person und 
-            probiere gerne neue Sachen aus. Zumbeispiel planne ich 
+            probiere gerne neue Sachen aus. Zumbeispiel probiere ich 
             momentan ein Spiel zu programmieren und in der nahen Zukunft
             auch vielleicht einmal Musik zu machen. 
             </div>
-            <div data-aos='fade-up' className='emoticon2'>(⌐■_■)</div>
+            <div data-aos='fade-left' className='emoticon2'>(⌐■_■)</div>
           </div>
         </div>
         </div>
@@ -103,7 +104,7 @@ export default function App() {
             <div data-aos='fade-up' className='aboutMe-text'>
             Seit dem beginn der IMS habe ich auch begonnen mit dem gelernten Stoff 
             zu programmieren. Die meisten Projekte sind kleine Konsolen Applikationen. 
-            Mein erstes grössere Projekt ist diese Webseite in der ich mich vorstelle. 
+            Mein erstes grössere Projekt ist diese Webseite in der ich mich vorstellen kann. 
             Hier sind noch ein paar weitere Information über mich…
             </div>
             <div className='aboutMe-tables'>
@@ -127,6 +128,7 @@ export default function App() {
                 <div className='table-item'><FaNodeJs size="2em" /> Node.js</div>
               </div>
             </div>
+            
           </div>
         </div>
         <div ref={contact} className='kontakt'>

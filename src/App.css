@@ -476,7 +476,6 @@ span {
 
 
 
-
 .kontakt {
     height: 80vh;
     background-color: #050A30;
@@ -504,6 +503,48 @@ span {
     margin-left: 8vw;
 
 }
+
+.emoticon3:before {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 80px;
+    color:#FBF9FA;
+    margin-top: 2vh;
+    content: '';
+    animation: rotation infinite 1.5s;
+    margin-right: 3.05vw;
+}
+
+@keyframes rotation {
+    0%{
+        content: '\\(^_^)/';
+    }
+    12.5%{
+        content: '(\\^_)/';
+    }
+    25%{
+        content: '( |^)/';
+    }
+    37.5%{
+        content: '(　/)';
+    }
+    50%{
+        content: '\\(　 )/';
+    }
+    62.5%{
+        content: '(\\　)';
+    }
+    75%{ 
+        content: '\\(^| )';
+    }
+    87.5%{
+        content: '\\(_^/)';
+        transform: translateY(0px);
+    }
+    100%{
+        content: '\\(^_^)/';
+    }
+}
+
 
 .right-side {
     display: flex;
