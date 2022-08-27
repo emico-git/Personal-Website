@@ -20,7 +20,6 @@ export default function App() {
       behavior: "smooth",
     });
   }
-
   
   useEffect(() => {
     Aos.init({
@@ -30,11 +29,15 @@ export default function App() {
     });
   }, []);
 
+  function refreshPage() {
+    window.location.reload(false);
+  }
+
   return (
     <div className='App'>
       <div className='nav-header'>
         <div className='logo'>
-          <img className='logo-image' src={image1} height={150} width={150}/>
+          <img onClick={refreshPage} className='logo-image' src={image1} height={150} width={150}/>
             <div className='logo-name'>
               <div className='slide-border'>
                 <div className=' slide-in-right1'>Emil</div>

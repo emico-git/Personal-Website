@@ -37,8 +37,11 @@ export default function Contact() {
           <label data-aos='fade-left' for='email' className='label'>Email</label>
           <input data-aos='fade-left' type='email' id='email' name='email'></input>
           <label data-aos='fade-left' for='message' className='label'>Nachricht</label>
-          <textarea data-aos='fade-left' id='message' rows="4" cols="50" name="comment" placeholder="( ._.) pls don't spam me..."></textarea>
-          <input  type='submit' className='submit-button'></input>
+          <div data-aos='fade-left'>
+          <textarea id='message' rows="4" cols="50" name="comment" placeholder="( ._.) pls don't spam me..."></textarea>
+          <br/>
+          <input type='submit' className='submit-button'></input>
+          </div>
         </div>
       </div>
     </form>

@@ -34,6 +34,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 
 a:link {
@@ -69,6 +70,7 @@ p {
 span {
     color:#F51720;
 }
+
 
 
 .slide-border {
@@ -174,6 +176,10 @@ span {
 
 .logo {
     display: flex;
+}
+
+.logo-image {
+    cursor: pointer;
 }
 
 .logo-name{
@@ -395,7 +401,7 @@ span {
     height: 100vh;
     background-color: #050A30;
     padding-top: 4vh;
-    
+
 }
 
 .whoami-content {
@@ -449,14 +455,12 @@ span {
     margin-right: 18%;
 }
 
-
 .aboutMe-tables {
     margin: 10vh;
     display: flex;
     justify-content: space-between;
 
 }
-
 
 .table-title {
     font-family: 'Montserrat', sans-serif;
@@ -477,9 +481,9 @@ span {
 
 
 .kontakt {
-    height: 80vh;
+    height: 100vh;
     background-color: #050A30;
-    padding-top: 4vh;
+    padding-top: 16vh;
 }
 
 .kontakt-content {
@@ -500,7 +504,7 @@ span {
 }
 
 .left-side {
-    margin-left: 8vw;
+    margin-left: 4vw;
 
 }
 
@@ -549,7 +553,7 @@ span {
 .right-side {
     display: flex;
     flex-direction: column;
-    margin-right: 7vw;
+    margin-right: 4vw;
 }
 .label {
     font-family: 'Montserrat', sans-serif;
