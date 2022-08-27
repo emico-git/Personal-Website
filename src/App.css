@@ -508,6 +508,7 @@ span {
 
 }
 
+
 .emoticon3:before {
     font-family: 'Open Sans', sans-serif;
     font-size: 80px;
@@ -515,7 +516,7 @@ span {
     margin-top: 2vh;
     content: '';
     animation: rotation infinite 1.5s;
-    margin-right: 3.05vw;
+    margin-right: 2vw;
 }
 
 @keyframes rotation {
@@ -542,7 +543,6 @@ span {
     }
     87.5%{
         content: '\\(_^/)';
-        transform: translateY(0px);
     }
     100%{
         content: '\\(^_^)/';

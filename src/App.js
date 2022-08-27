@@ -2,11 +2,14 @@ import './App.css'
 import { useRef, useMemo, useState, useEffect } from "react";
 import image1 from './images/logo.png';
 import image2 from './images/praktikum_edited2.jpg';
+import favicon from './images/favicon/favicon.ico';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 import { FaJava, FaNodeJs, FaLanguage } from 'react-icons/fa';
 import { SiJavascript, SiCsharp, SiHtml5, SiReact, SiCss3 } from 'react-icons/si';      
 import Contact from './Contact';
+import Helmet from "react-helmet";
+
 
 export default function App() {
 
@@ -35,6 +38,9 @@ export default function App() {
 
   return (
     <div className='App'>
+      <Helmet>
+        <title>emico's Website</title>
+      </Helmet>
       <div className='nav-header'>
         <div className='logo'>
           <img onClick={refreshPage} className='logo-image' src={image1} height={150} width={150}/>
