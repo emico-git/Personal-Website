@@ -149,25 +149,26 @@ export default function App() {
           <div className='titel'>
             <p>Projekte</p>
           </div>
-          <div className='projekte-content'></div>
-            <div className='cards'>
-              <img className='card1' src={image3} height={465} width={950}></img>
-              <div className='intro'>
-                <h2>Portfolio</h2>
-                <p>
-                  Dieses Portfolio ist meine erste eigene Website. Ich habe es mit der hilfe
-                  von React (Aos, emailJs, Helmet), und CSS gemacht und dient zur Presentation meiner 
-                  weiteren Projekte. 
-                </p>
-              </div>
-              <img className='card2' src={image4} height={465} width={950}></img>
-              <div className='intro'>
-                <h2>Budget App</h2>
-                <p>
-                  Eine einfache Budget App welche einer Person helfen ihre Ausgaben um Überblick zu behalten.
-                  Es wurde mit der hilfe von React (express), NodeJS und MySQL und ist noch 
-                  ausbaufähig.  
-                </p>
+          <div className='projekte-content'>
+              <div className='cards'>
+                <img className='card1' src={image3} height={465} width={950}></img>
+                <div className='intro'>
+                  <h2>Portfolio</h2>
+                  <p>
+                    Dieses Portfolio ist meine erste eigene Website. Ich habe es mit der hilfe
+                    von React (Aos, emailJs, Helmet), und CSS gemacht und dient zur Presentation meiner 
+                    weiteren Projekte. 
+                  </p>
+                </div>
+                <img className='card2' src={image4} height={465} width={950}></img>
+                <div className='intro'>
+                  <h2>Budget App</h2>
+                  <p>
+                    Eine einfache Budget App welche einer Person helfen ihre Ausgaben um Überblick zu behalten.
+                    Es wurde mit der hilfe von React (express), NodeJS und MySQL und ist noch 
+                    ausbaufähig.  
+                  </p>
+                </div>
               </div>
             </div>
         </div>
