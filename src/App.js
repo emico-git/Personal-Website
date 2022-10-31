@@ -1,11 +1,13 @@
 import './App.css'
-import { useRef, useMemo, useState, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import image1 from './images/logo.png';
 import image2 from './images/praktikum_edited2.jpg';
+import image3 from './images/portfolio.png';
+import image4 from './images/budget.png';
 import favicon from './images/favicon/favicon.ico';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
-import { FaJava, FaNodeJs, FaLanguage } from 'react-icons/fa';
+import { FaJava, FaNodeJs, FaLanguage, FaGithub } from 'react-icons/fa';
 import { SiJavascript, SiCsharp, SiHtml5, SiReact, SiCss3 } from 'react-icons/si';      
 import Contact from './Contact';
 import Helmet from "react-helmet";
@@ -41,6 +43,9 @@ export default function App() {
       <Helmet>
         <title>emico's Website</title>
       </Helmet>
+      <head>
+        <script src="https://cdn.counter.dev/script.js" data-id="d0ce3fa0-4e83-4625-9cbf-f231023f58dd" data-utcoffset="2"></script>
+      </head>
       <div className='nav-header'>
         <div className='logo'>
           <img onClick={refreshPage} className='logo-image' src={image1} height={150} width={150}/>
@@ -58,7 +63,7 @@ export default function App() {
             <li onClick={() => scrollToSection(whoami)}><div className='slide-border'><p className='slide-in-up1'>Wer bin ich</p></div></li>
             <li onClick={() => scrollToSection(aboutMe)}><div className='slide-border'><p className='slide-in-up2'>Über mich</p></div></li>
             <li onClick={() => scrollToSection(contact)}><div className='slide-border'><p className='slide-in-up3'>Kontakt</p></div></li>
-            <li ><div className='slide-border'><p className='slide-in-up4'>Blog (Work in Progress)</p></div></li>
+            <li ><div className='slide-border'><p className='slide-in-up4'><a href='https://github.com/emico-git' target="_blank" className='github-link'>Github</a></p></div></li>
           </div>
         </ul>
       </div>
@@ -77,7 +82,7 @@ export default function App() {
               <div className='description'>
                 Ich bin 17 Jahre Alt und mache die Ausbildung zum Applikationsentwickler 
                 durch die IMS (Informatikmittelschule) 
-                an der <a href='https://www.kbw.ch/'target="_blank"> Kantonsschule Büelrain</a>.
+                an der <a className='kbw-link' href='https://www.kbw.ch/'target="_blank"> Kantonsschule Büelrain</a>.
               </div>
             </div>
             <div className='slide-border'>
@@ -139,6 +144,32 @@ export default function App() {
             </div>
             
           </div>
+        </div>
+        <div classname='projekte'>
+          <div className='titel'>
+            <p>Projekte</p>
+          </div>
+          <div className='projekte-content'></div>
+            <div className='cards'>
+              <img className='card1' src={image3} height={465} width={950}></img>
+              <div className='intro'>
+                <h2>Portfolio</h2>
+                <p>
+                  Dieses Portfolio ist meine erste eigene Website. Ich habe es mit der hilfe
+                  von React (Aos, emailJs, Helmet), und CSS gemacht und dient zur Presentation meiner 
+                  weiteren Projekte. 
+                </p>
+              </div>
+              <img className='card2' src={image4} height={465} width={950}></img>
+              <div className='intro'>
+                <h2>Budget App</h2>
+                <p>
+                  Eine einfache Budget App welche einer Person helfen ihre Ausgaben um Überblick zu behalten.
+                  Es wurde mit der hilfe von React (express), NodeJS und MySQL und ist noch 
+                  ausbaufähig.  
+                </p>
+              </div>
+            </div>
         </div>
         <div ref={contact} className='kontakt'>
           <div className='titel'>

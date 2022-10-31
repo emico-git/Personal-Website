@@ -30,7 +30,7 @@ export default function Contact() {
           <div data-aos='fade-right' className='info-box'><GrMail size="1.5em"/> emilcu05@gmail.com</div>
             <div data-aos='fade-right' className='info-box'><ImLocation size="1.5em"/> Embrach, Zürich</div>
         </div>
-        <div className='emoticon3' data-aos='fade-up'></div>
+        
         <div className='right-side'>
           <label data-aos='fade-left' for='name' className='label'>Name</label>
           <input data-aos='fade-left' type='text' id='name' name='name'></input>
