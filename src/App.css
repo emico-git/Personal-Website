@@ -8,10 +8,12 @@
     --animation-link2: 2.3s;
     --animation-link3: 2.6s;
     --animation-link4: 2.9s;
+    --animation-link5: 2.9s;
     --animation-link1Nr: 2;
     --animation-link2Nr: 2.3;
     --animation-link3Nr: 2.6;
     --animation-link4Nr: 2.9;
+    --animation-link5Nr: 2.9;
 
     --typewriter: 3.5s;
    
@@ -34,7 +36,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
+ 
 }
 
 
@@ -86,6 +88,10 @@ span {
 
 .slide-in-up4 {
     animation: Slide_in_up4 var(--animation-link4) ease;
+}
+
+.slide-in-up5 {
+    animation: Slide_in_up5 var(--animation-link5) ease;
 }
 
 @keyframes Slide_in_right1{
@@ -148,6 +154,16 @@ span {
     }
 }
 
+@keyframes Slide_in_up5{
+    
+    0% {
+        transform: translateY(calc(var(--animation-link5Nr) * 75px));
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 
 
 
@@ -185,17 +201,10 @@ span {
     background-color: #000C66;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+    
 }
 
-.nav-links {
-    font-family: 'Montserrat', sans-serif;
-    color: #FBF9FA;
-    list-style: none;
-    font-size: 20px;
-    background-color: #000C66;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-}
+
 
 .nav-links li {
     display: inline-block;
@@ -634,24 +643,78 @@ textarea {
 }
 
 .cards {
-    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
-.card1 {
-    margin-top: 5vh;
+.projekt-image1 {
+    height:465px;
+    width: 950px;
     border: 2px solid white;
     border-radius: 30px;
     box-shadow: 5px 5px 20px black;
 }
-
-.card2 {
-    margin-bottom: 5vh;
-    border: 2px solid ;
+.projekt-image2 {
+    height:465px;
+    width: 950px;
+    border: 2px solid black;
     border-radius: 30px;
+    box-shadow: 5px 5px 20px black;
 }
+
+
+
+.card {
+    margin-top: 10vh;
+    height:475px;
+    width: 950px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
 
 .intro {
     font-family: 'Montserrat', sans-serif;
     color: aliceblue;
     font-size: 20px;
+    border: 2px solid black;
+    border-radius: 30px;
+    position: absolute;
+    overflow: hidden;
+    transition: 0.5s ease;
+    background-color: rgb(0, 0, 0, 0.75);
+    height: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 140px;
+}
+
+.intro h2{
+    margin: 2vh;
+    
+}
+
+.intro p{
+    margin: 2vh;
+    
+}
+
+.card:hover .intro{
+
+    transition: transform 300ms;
+    transform: translate3d(0, -100%, 0);
+    
+}
+
+.card:hover {
+    color: rgb(0, 0, 0, 0.75);
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+form {
+    background-color: #050A30;
+    
 }

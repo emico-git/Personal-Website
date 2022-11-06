@@ -40,7 +40,7 @@ export default function Contact() {
           <div data-aos='fade-left'>
           <textarea id='message' rows="4" cols="50" name="comment" placeholder="( ._.) pls don't spam me..."></textarea>
           <br/>
-          <input type='submit' className='submit-button'></input>
+          <input type='submit' className='submit-button' value='Submit'></input>
           </div>
         </div>
       </div>

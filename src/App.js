@@ -18,6 +18,7 @@ export default function App() {
   const aboutMe = useRef(null);
   const whoami = useRef(null);
   const contact = useRef(null);
+  const projekte = useRef(null);
 
   const scrollToSection = (elementref) => {
     window.scrollTo({
@@ -63,7 +64,8 @@ export default function App() {
             <li onClick={() => scrollToSection(whoami)}><div className='slide-border'><p className='slide-in-up1'>Wer bin ich</p></div></li>
             <li onClick={() => scrollToSection(aboutMe)}><div className='slide-border'><p className='slide-in-up2'>Über mich</p></div></li>
             <li onClick={() => scrollToSection(contact)}><div className='slide-border'><p className='slide-in-up3'>Kontakt</p></div></li>
-            <li ><div className='slide-border'><p className='slide-in-up4'><a href='https://github.com/emico-git' target="_blank" className='github-link'>Github</a></p></div></li>
+            <li onClick={() => scrollToSection(projekte)}><div className='slide-border'><p className='slide-in-up4'>Projekte</p></div></li>
+            <li ><div className='slide-border'><p className='slide-in-up'><a href='https://github.com/emico-git' target="_blank" className='github-link'>Github</a></p></div></li>
           </div>
         </ul>
       </div>
@@ -101,12 +103,12 @@ export default function App() {
           </div>
           <div className='whoami-right-side'>
             <div data-aos='fade-up' className='whoami-text'>
-            Ich bin am 5. Februar 2005 in Österreich, Wien geboren. 
-            In meiner Freizeit spiele ich gerne Videospiele und gehe regelmässig in 
+            Meine Name ist Emil Collins Udupuzhayil und ich bin am 5. Februar 2005 in 
+            Österreich, Wien geboren. In meiner Freizeit spiele ich 
+            gerne Videospiele und gehe regelmässig in 
             den Kraftraum. Ich bin eine sehr neugierige Person und 
-            probiere gerne neue Sachen aus. Zumbeispiel probiere ich 
-            momentan ein Spiel zu programmieren und in der nahen Zukunft
-            auch vielleicht einmal Musik zu machen. 
+            probiere gerne neue Sachen aus. Zum beispiel probiere ich 
+            momentan ein Spiel zu programmieren und Musik zu machen. 
             </div>
             <div data-aos='fade-up' className='emoticon2'>(⌐■_■)</div>
           </div>
@@ -118,8 +120,8 @@ export default function App() {
             <div data-aos='fade-up' className='aboutMe-text'>
             Seit dem beginn der IMS habe ich auch begonnen mit dem gelernten Stoff 
             zu programmieren. Die meisten Projekte sind kleine Konsolen Applikationen. 
-            Mein erstes grössere Projekt ist diese Webseite in der ich mich vorstellen kann. 
-            Hier sind noch ein paar weitere Information über mich…
+            Meine grösseren Projekte habe ich weiter unten ausgestellt. Hier sind noch ein paar weitere 
+            Information über mich…
             </div>
             <div className='aboutMe-tables'>
               <div data-aos='fade-right' className='table'>
@@ -135,7 +137,7 @@ export default function App() {
                 <div className='table-item'><SiCsharp size="2em" /> C#</div>
               </div>
               <div data-aos='fade-left' className='table'>
-                <div className='table-title'>Sonstige Kenntnisse:</div>
+                <div className='table-title'>Web App Kenntnisse:</div>
                 <div className='table-item'><SiReact size="2em" /> React</div>
                 <div className='table-item'><SiHtml5 size="2em" /> HTML</div>
                 <div className='table-item'><SiCss3 size="2em" /> CSS</div>
@@ -145,29 +147,37 @@ export default function App() {
             
           </div>
         </div>
-        <div classname='projekte'>
+        <div ref={projekte} classname='projekte'>
           <div className='titel'>
             <p>Projekte</p>
           </div>
           <div className='projekte-content'>
               <div className='cards'>
-                <img className='card1' src={image3} height={465} width={950}></img>
-                <div className='intro'>
-                  <h2>Portfolio</h2>
-                  <p>
-                    Dieses Portfolio ist meine erste eigene Website. Ich habe es mit der hilfe
-                    von React (Aos, emailJs, Helmet), und CSS gemacht und dient zur Presentation meiner 
-                    weiteren Projekte. 
-                  </p>
+                <div data-aos='fade-right' className='card'>
+                  <a className='kbw-link' href='https://emil.collins.at/'target="_blank">
+                    <img className='projekt-image1' src={image3} height='465px' width='950px'></img>
+                    <div className='intro'>
+                      <h2>Portfolio</h2>
+                      <p>
+                        Dieses Portfolio ist meine erste eigene Website. Ich habe es mit der hilfe
+                        von React (Aos, emailJs, Helmet), und CSS gemacht und dient zur Presentation meiner 
+                        weiteren Projekte. 
+                      </p>
+                    </div>
+                  </a>
                 </div>
-                <img className='card2' src={image4} height={465} width={950}></img>
-                <div className='intro'>
-                  <h2>Budget App</h2>
-                  <p>
-                    Eine einfache Budget App welche einer Person helfen ihre Ausgaben um Überblick zu behalten.
-                    Es wurde mit der hilfe von React (express), NodeJS und MySQL und ist noch 
-                    ausbaufähig.  
-                  </p>
+                <div data-aos='fade-left' className='card' >
+                <a className='kbw-link' href='https://budget.collins.at/'target="_blank">
+                <img className='projekt-image2' src={image4} height={465} width={950}></img>
+                  <div className='intro'>
+                    <h2>Budget App</h2>
+                    <p>
+                      Eine einfache Budget App welche einer Person hilft ihre Ausgaben um Überblick zu behalten.
+                      Es wurde mit der hilfe von React (express), NodeJS und MySQL und ist noch 
+                      ausbaufähig.  
+                    </p>
+                  </div>
+                  </a>
                 </div>
               </div>
             </div>
