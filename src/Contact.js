@@ -2,7 +2,6 @@ import React, { useRef } from 'react';
 import { ImLocation } from 'react-icons/im';
 import { GrMail } from 'react-icons/gr';
 import { BsFillTelephoneFill } from 'react-icons/bs';
-import Aos from 'aos';
 import 'aos/dist/aos.css'
 import emailjs from '@emailjs/browser';
 
@@ -19,6 +18,8 @@ export default function Contact() {
       }, (error) => {
           console.log(error.text);
       });
+
+      window.location.reload(false);
   }
 
 

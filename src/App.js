@@ -4,10 +4,9 @@ import image1 from './images/logo.png';
 import image2 from './images/praktikum_edited2.jpg';
 import image3 from './images/portfolio.png';
 import image4 from './images/budget.png';
-import favicon from './images/favicon/favicon.ico';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
-import { FaJava, FaNodeJs, FaLanguage, FaGithub } from 'react-icons/fa';
+import { FaJava, FaNodeJs, FaLanguage } from 'react-icons/fa';
 import { SiJavascript, SiCsharp, SiHtml5, SiReact, SiCss3 } from 'react-icons/si';      
 import Contact from './Contact';
 import Helmet from "react-helmet";
@@ -49,7 +48,7 @@ export default function App() {
       </head>
       <div className='nav-header'>
         <div className='logo'>
-          <img onClick={refreshPage} className='logo-image' src={image1} height={150} width={150}/>
+          <img onClick={refreshPage} className='logo-image' src={image1} height={150} width={150} alt="Emil's Logo"/>
             <div className='logo-name'>
               <div className='slide-border'>
                 <div className=' slide-in-right1'>Emil</div>
@@ -172,7 +171,7 @@ export default function App() {
                   <div className='intro'>
                     <h2>Budget App</h2>
                     <p>
-                      Eine einfache Budget App welche einer Person hilft ihre Ausgaben um Überblick zu behalten.
+                      Eine einfache Budget App welche einer Person hilft ihre Ausgaben im Überblick zu behalten.
                       Es wurde mit der hilfe von React (express), NodeJS und MySQL und ist noch 
                       ausbaufähig.  
                     </p>
