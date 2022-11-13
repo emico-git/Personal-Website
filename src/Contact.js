@@ -19,12 +19,12 @@ export default function Contact() {
           console.log(error.text);
       });
 
-      window.location.reload(false);
+      document.getElementById("form").reset();
   }
 
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
+    <form ref={form} onSubmit={sendEmail} id="form">
       <div className='kontakt-content'>
         <div className='left-side'>
           <div data-aos='fade-right' className='info-box'><BsFillTelephoneFill size="1.5em"/> 078 760 71 25</div>
