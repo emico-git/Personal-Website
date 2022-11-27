@@ -6,7 +6,7 @@ import image3 from './images/portfolio.png';
 import image4 from './images/budget.png';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
-import { FaJava, FaNodeJs, FaLanguage } from 'react-icons/fa';
+import { FaJava, FaNodeJs, FaLanguage, FaPhp } from 'react-icons/fa';
 import { SiJavascript, SiCsharp, SiHtml5, SiReact, SiCss3 } from 'react-icons/si';      
 import Contact from './Contact';
 import Helmet from "react-helmet";
@@ -134,6 +134,7 @@ export default function App() {
                 <div className='table-item'><FaJava size="2em"/> Java</div>
                 <div className='table-item'><SiJavascript size="2em"/> JavaScript</div>
                 <div className='table-item'><SiCsharp size="2em" /> C#</div>
+                <div className='table-item'><FaPhp size="2em" /> PHP</div>
               </div>
               <div data-aos='fade-left' className='table'>
                 <div className='table-title'>Web App Kenntnisse:</div>
