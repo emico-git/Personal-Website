@@ -1,7 +1,7 @@
 import './App.css'
 import { useRef, useEffect } from "react";
 import image1 from './images/logo.png';
-import image2 from './images/praktikum_edited2.jpg';
+import image2 from './images/praktikum.jpg';
 import image3 from './images/portfolio.png';
 import image4 from './images/budget.png';
 import Aos from 'aos';
@@ -81,7 +81,7 @@ export default function App() {
             </div>
             <div className='slide-border'>
               <div className='description'>
-                Ich bin 17 Jahre Alt und mache die Ausbildung zum Applikationsentwickler 
+                Ich bin 18 Jahre Alt und mache die Ausbildung zum Applikationsentwickler 
                 durch die IMS (Informatikmittelschule) 
                 an der <a className='kbw-link' href='https://www.kbw.ch/'target="_blank"> Kantonsschule Büelrain</a>.
               </div>
@@ -103,11 +103,11 @@ export default function App() {
           <div className='whoami-right-side'>
             <div data-aos='fade-up' className='whoami-text'>
             Meine Name ist Emil Collins Udupuzhayil und ich bin am 5. Februar 2005 in 
-            Österreich, Wien geboren. In meiner Freizeit spiele ich 
-            gerne Videospiele und gehe regelmässig in 
-            den Kraftraum. Ich bin eine sehr neugierige Person und 
+            Österreich, Wien geboren. In meiner Freizeit programmiere ich 
+            gerne und gehe regelmässig in den Kraftraum. 
+            Ich bin eine sehr neugierige Person und 
             probiere gerne neue Sachen aus. Zum beispiel probiere ich 
-            momentan ein Spiel zu programmieren und Musik zu machen. 
+            momentan ein Spiel zu programmieren. 
             </div>
             <div data-aos='fade-up' className='emoticon2'>(⌐■_■)</div>
           </div>
